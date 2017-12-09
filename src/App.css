@@ -1,0 +1,185 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+.App {
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  display: grid;
+
+}
+
+.header {
+  /*border: blue solid;*/
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
+  height: 65px;
+}
+
+.header .name {
+  padding-top: 40px;
+  display: block;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  grid-column: 1/2;
+  font-family: 'Merriweather', serif;
+  font-family: 'Raleway Dots', cursive;
+  font-size: 25px;
+  height: 40px;
+  text-decoration: none;
+  /*border: blue solid;*/
+}
+
+.header .nav {
+  padding: 10px;
+  background-color: white;
+  color: white;
+  grid-column: 3/4;
+  height: 40px;
+
+}
+
+.nav .item {
+  padding: 15px;
+  /*border: blue solid;*/
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 100%;
+  text-decoration: none;
+  
+}
+
+.nav .item:hover{
+  background-color: lightgrey;
+  color: white;
+  transition: .5s background-color;
+  border-radius: 10%;
+}
+
+.post-container {
+  padding: 4em;
+  padding-left: 9em;
+  padding-right: 9em;
+ 
+}
+
+.post-list {
+  border: 3px lightgrey solid;
+  border-width: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 100px;
+  color: #444;
+  padding: 3em;
+  grid-auto-rows: 150px;
+  text-decoration: none;
+}
+
+.post{
+  /*border: 3px darkgray solid;*/
+  text-align: center;
+  background-color: lightgray;
+  color: green;
+  padding: 20px;
+  text-decoration: none;
+  /*width: 33.33%;*/
+}
+
+.postDetails {
+ padding: 3em;
+}
+
+.body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pic {
+  height: 800px;
+  width: 100%;
+  /*filter: hue-rotate(140deg);*/
+}
+
+
+/*ALL THINGS RICHEDITOR
+*/
+
+/*.editor {
+ border: 1px solid grey;
+ padding: 4em;
+ font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+ width: 480px;
+ margin: 0 auto;
+}*/
+
+.RichEditor-root {
+  background: #fff;
+  border: 1px solid #ddd;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  padding: 15px;
+   width: 480px;
+}
+
+.RichEditor-editor {
+  border-top: 1px solid #ddd;
+  cursor: text;
+  font-size: 16px;
+  margin-top: 10px;
+
+}
+
+.RichEditor-editor .public-DraftEditorPlaceholder-root,
+.RichEditor-editor .public-DraftEditor-content {
+  margin: 0 -15px -15px;
+  padding: 15px;
+
+}
+
+.RichEditor-editor .public-DraftEditor-content {
+  min-height: 100px;
+
+}
+
+.RichEditor-hidePlaceholder .public-DraftEditorPlaceholder-root {
+  display: none;
+}
+
+.RichEditor-editor .RichEditor-blockquote {
+  border-left: 5px solid #eee;
+  color: #666;
+  font-family: 'Hoefler Text', 'Georgia', serif;
+  font-style: italic;
+  margin: 16px 0;
+  padding: 10px 20px;
+}
+
+.RichEditor-editor .public-DraftStyleDefault-pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-family: 'Inconsolata', 'Menlo', 'Consolas', monospace;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.RichEditor-controls {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+  user-select: none;
+}
+
+.RichEditor-styleButton {
+  color: #999;
+  cursor: pointer;
+  margin-right: 16px;
+  padding: 2px 0;
+  display: inline-block;
+}
+
+.RichEditor-activeButton {
+  color: #5890ff;
+}
