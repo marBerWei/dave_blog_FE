@@ -8,7 +8,7 @@ class NavBar extends React.Component {
       	<NavLink activeClassName="active" className="item" to="/consulting">Consulting</NavLink>
         <NavLink activeClassName="active" className="item" to="/posts">Blog</NavLink>
         <NavLink activeClassName="active" className="item" to="/me">About Me</NavLink>
-        <NavLink activeClassName="active" className="item" to="/me">Contact</NavLink>
+        <NavLink activeClassName="active" className="item" to="/contact">Contact</NavLink>
       </div>
     )
   }
